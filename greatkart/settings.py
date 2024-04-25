@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
-    'carts'
+    'carts',
+    'orders'
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'anjithasebastian@gmail.com'
 EMAIL_HOST_PASSWORD = 'euxd itgn weve kibg '
 EMAIL_USE_TLS = True
+
+
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
